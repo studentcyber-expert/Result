@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Results Checker</title>
+    <meta name="description" content="Fast Bangladesh SSC HSC Result Checker">
+    <link rel="stylesheet" href="style.css">
+</hCheckerker
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1 class="title">🇧🇩 Bangladesh Result Checker</h1>
+
+            <div class="form-group">
+                <label>Exam</label>
+                <select id="exam">
+                    <option value="SSC">SSC/Dakhil</option>
+                    <option value="hsc">HSC/Alim</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Board</label>
+                <select id="board">
+                    <option value="dhaka">Dhaka</option>
+                    <option value="rajshahi">Rajshahi</option>
+                    <option value="comilla">Comilla</option>
+                    <option value="chittagong">Chittagong</option>
+                    <option value="barisal">Barisal</option>
+                    <option value="sylhet">Sylhet</option>
+                    <option value="dinajpur">Dinajpur</option>
+                    <option value="jessore">Jessore</option>
+                    <option value="mymensingh">Mymensingh</option>
+                    <option value="madrasah">Madrasah</option>
+                    <option value="technical">Technical</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Year</label>
+                <select id="year"></select>
+            </div>
+
+            <div class="form-group">
+                <label>Roll Number</label>
+                <input type="number" id="roll" placeholder="Enter Roll Number">
+            </div>
+
+            <div class="form-group">
+                <label>Regulation <span class="optional">(Optional)</span></label>
+                <input type="text" id="reg" placeholder="Enter Regulation (Optional)">
+            </div>
+
+            <button onclick="checkResult()">Check Result</button>
+
+        </div>
+
+        <div id="progressBar" class="progress-container">
+            <div class="progress-info">
+                <span class="progress-label">⏳ Fetching Result...</span>
+                <span id="progressText" class="progress-percent">0%</span>
+            </div>
+            <div class="progress-track">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <footer class="footer">
+        Developed by <b>Tarif</b>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
